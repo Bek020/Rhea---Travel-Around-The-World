@@ -10805,6 +10805,7 @@ h3 {
 }
 
 .nav {
+  font-family: "Nunito", sans-serif;
   text-align: center;
 }
 .nav-item {
@@ -10834,6 +10835,66 @@ h3 {
   border: 3px solid var(--btn-color);
   border-radius: 0;
   color: var(--btn-color);
+}
+
+.section {
+  font-family: "Nunito Sans", sans-serif;
+  background: url("../image/headerImage.png") no-repeat;
+  background-position: right;
+  background-size: 350px auto;
+  height: 1100px;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    background-size: 500px auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    background-size: 600px auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section {
+    background-size: 800px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    background-size: auto;
+    height: 1100px;
+  }
+}
+.section__title {
+  font-weight: bold;
+  color: var(--title-text-color);
+  padding-top: 30px;
+}
+@media screen and (min-width: 768px) {
+  .section__title {
+    padding-top: 100px;
+    font-size: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    padding-top: 200px;
+    font-size: 80px;
+  }
+}
+.section__desc {
+  font-size: 20px;
+  color: var(--desc-text-color);
+  margin-top: 50px;
+}
+.section__btn {
+  background: var(--btn-color);
+  border: none;
+  border-radius: 0px;
+  margin-top: 30px;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: var(--text-color);
 }
 
 /*# sourceMappingURL=main.css.map */
