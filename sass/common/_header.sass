@@ -1,0 +1,35 @@
+.container
+  max-width: $width
+  
+.header
+  margin: 20px 0
+
+.nav
+  text-align: center
+
+  &-item
+    padding: 30px
+
+  &__link 
+    color: $descTextColor
+    font-size: 20px
+
+    &-active
+      font-size: 20px
+      color: $btnColor
+
+  &__btn
+    padding: 15px 0
+    text-align: center
+
+    +laptop
+      padding-left: 15px
+
+    &-wrap
+      text-align: center
+      font-size: 20px
+      padding: 10px 40px
+      border: 3px solid $btnColor
+      border-radius: 0
+      color: $btnColor
+  
