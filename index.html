@@ -6,6 +6,7 @@
   <title>Rhea - Travel Around The World</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -59,15 +60,112 @@
       <button class="section__btn">Sign Up Now</button>
     </div>
   </section>
+
+  <article class="article">
+    <div class="container">
+      <div class="article__wrapper">
+        <div class="slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="image/Article/slider.png" alt="" class="swiper-image">
+                <p class="swiper-image-price">$640</p>
+                <p class="swiper-image-text">Kathmandu, Nepal</p>
+                <div class="swiper-info">
+                  <div class="swiper-info-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="swiper-info-text">
+                    7 days tour
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/Article/slider2.png" alt="" class="swiper-image">
+                <p class="swiper-image-price">$560</p>
+                <p class="swiper-image-text">Raja Ampat, Indonesia</p>
+                <div class="swiper-info">
+                  <div class="swiper-info-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="swiper-info-text">
+                    10 days tour
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="image/Article/slider3.png" alt="" class="swiper-image">
+                <p class="swiper-image-price">$780</p>
+                <p class="swiper-image-text">Kuramathi, maldives</p>
+                <div class="swiper-info">
+                  <div class="swiper-info-star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <div class="swiper-info-text">
+                    2 days tour
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <i class="fas fa-arrow-left swiper-icon"></i>
+          <i class="fas fa-arrow-right swiper-icon"></i>
+        </div>
+        <div class="article__content">
+          <h1 class="article__content-title">
+            Amazing places to enjoy your travel
+          </h1>
+          <hr class="article__content-line">
+          <p class="article__content-desc">
+            Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui, varius vehicula ligula nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam ultrices nec. Cras nulla mauris, fermentum nec libero in.
+          </p>
+          <button class="article__content-btn">
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
+  </article>
   
+  <!-- <script src="js/main.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script>
     var hamburger = document.querySelector(".hamburger");
-    var nav = document.querySelector(".nav"); // copied
+    var nav = document.querySelector(".nav");
     hamburger.addEventListener("click", function () {
       hamburger.classList.toggle("is-active");
-      nav.classList.toggle("is-active"); // copied
+      nav.classList.toggle("is-active");
+    });
+  </script>
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+  
+    new Swiper('.swiper-container', {
+      loop: true,
+      spaceBetween: 35,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.fa-arrow-right',
+        prevEl: '.fa-arrow-left',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3
+        }
+      }
     });
   </script>
 </body>
