@@ -141,6 +141,7 @@
 
   <figure class="figure">
     <div class="container">
+
       <div class="figure__info">
         <h1 class="figure__title">
           Featured videos
@@ -172,6 +173,68 @@
     </div>
   </figure>
 
+  <figcaption class="figcaption">
+    <div class="container">
+
+      <div class="figcaption__info">
+        <h1 class="figcaption__title">
+          Traveller’s experiences
+        </h1>
+        <hr class="figure__line">
+      </div>
+
+      <div class="swiper-container-figcaption">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="figcaption__swiper-text">
+              “Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo, at faucibus enim aliquam eu. Nullam quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit elit, fringilla a nisi ut, dapibus eleifend quam.” 
+            </p>
+            <div class="figcaption__swiper-man">
+              <img src="image/Figcaption/man.png" alt="" class="figcaption__swiper-img">
+              <h3 class="figcaption__swiper-title">
+                Donquixote Law
+              </h3>
+              <p class="figcaption__swiper-desc">
+                Treveller
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="figcaption__swiper-text">
+              “Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo, at faucibus enim aliquam eu. Nullam quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit elit, fringilla a nisi ut, dapibus eleifend quam.” 
+            </p>
+            <div class="figcaption__swiper-man">
+              <img src="image/Figcaption/man.png" alt="" class="figcaption__swiper-img">
+              <h3 class="figcaption__swiper-title">
+                Donquixote Law
+              </h3>
+              <p class="figcaption__swiper-desc">
+                Treveller
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <p class="figcaption__swiper-text">
+              “Curabitur posuere ullamcorper pulvinar. Donec dignissim bibendum leo, at faucibus enim aliquam eu. Nullam quis pulvinar diam, ac elementum urna. Integer id vehicula tortor, nec pulvinar libero. Ut elit elit, fringilla a nisi ut, dapibus eleifend quam.” 
+            </p>
+            <div class="figcaption__swiper-man">
+              <img src="image/Figcaption/man.png" alt="" class="figcaption__swiper-img">
+              <h3 class="figcaption__swiper-title">
+                Donquixote Law
+              </h3>
+              <p class="figcaption__swiper-desc">
+                Treveller
+              </p>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-arrow-left figcaption-icon-left figcaption-icon"></i>
+        <i class="fas fa-arrow-right figcaption-icon-right figcaption-icon"></i>
+      </div>
+
+    </div>
+  </figcaption>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -200,6 +263,16 @@
           slidesPerView: 3
         }
       }
+    });
+    
+    new Swiper('.swiper-container-figcaption', {
+      loop: true,
+      spaceBetween: 700,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.figcaption-icon-right',
+        prevEl: '.figcaption-icon-left',
+      },
     });
   </script>
 </body>

@@ -11227,6 +11227,7 @@ h3 {
   position: relative;
   max-width: 1075px;
   margin-top: 50px;
+  margin: 0 auto;
 }
 .video__wrap:hover .video__controls {
   position: absolute;
@@ -11282,6 +11283,71 @@ h3 {
 @media screen and (min-width: 1400px) {
   .video__timer {
     font-size: 30px;
+  }
+}
+
+.swiper-container-figcaption {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.swiper-slide {
+  text-align: center;
+}
+.swiper-scrollbar {
+  height: 10px;
+  color: var(--btn-color);
+}
+
+.figcaption {
+  margin: 0 auto;
+  max-width: 1050px;
+}
+.figcaption__info {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+.figcaption__title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  margin: 30px 0;
+}
+.figcaption__desc {
+  color: var(--desc-text-color);
+  font-size: 20px;
+}
+.figcaption__swiper-text {
+  padding-top: 80px;
+  font-size: 20px;
+  text-align: center;
+}
+.figcaption__swiper-img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+}
+.figcaption__swiper-title {
+  padding: 20px 0;
+}
+.figcaption-icon {
+  padding: 10px;
+  font-size: 30px;
+  color: #A0A0A0;
+}
+@media screen and (min-width: 768px) {
+  .figcaption-icon-left {
+    position: absolute;
+    left: 150px;
+    bottom: 250px;
+    z-index: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .figcaption-icon-right {
+    position: absolute;
+    right: 150px;
+    bottom: 250px;
+    z-index: 1;
   }
 }
 
