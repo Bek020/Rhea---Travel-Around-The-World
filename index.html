@@ -65,9 +65,9 @@
     <div class="container">
       <div class="article__wrapper">
         <div class="slider">
-          <div class="swiper-container">
+          <div class="swiper-container swiper-container-article">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide article__slide">
                 <img src="image/Article/slider.png" alt="" class="swiper-image">
                 <p class="swiper-image-price">$640</p>
                 <p class="swiper-image-text">Kathmandu, Nepal</p>
@@ -173,6 +173,59 @@
     </div>
   </figure>
 
+  <main class="main">
+    <div class="container">
+
+      <div class="main__info">
+        <h1 class="main__title">
+          Travel categories
+        </h1>
+        <hr class="figure__line">
+        <p class="main__desc">
+          Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper blandit vitae et felis. Morbi ante urna, imperdiet vel neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed commodo. Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut, scelerisque volutpat diam.
+        </p>
+      </div>
+
+      <div class="swiper-container swiper-container-main">
+        <div class="swiper-wrapper main__swiper-wrapper">
+          <div class="swiper-slide main__slide">
+            <img src="image/Main/image.png" alt="" class="main__swiper-img">
+            <p class="main__swiper-text">
+              Beaches, coast and island
+            </p>
+          </div>
+          <div class="swiper-slide main__slide">
+            <img src="image/Main/image2.png" alt="" class="main__swiper-img">
+            <p class="main__swiper-text">
+              Art and culture
+            </p>
+          </div>
+          <div class="swiper-slide main__slide">
+            <img src="image/Main/image3.png" alt="" class="main__swiper-img">
+            <p class="main__swiper-text">
+              Backpacking
+            </p>
+          </div>
+          <div class="swiper-slide main__slide">
+            <img src="image/Main/image4.jpg" alt="" class="main__swiper-img">
+            <p class="main__swiper-text">
+              Wildlife and nature
+            </p>
+          </div>
+          <div class="swiper-slide main__slide">
+            <img src="image/Main/image5.jpg" alt="" class="main__swiper-img">
+            <p class="main__swiper-text">
+              Art and culture
+            </p>
+          </div>
+        </div>
+        <i class="fas fa-arrow-left main__icon main__icon-left"></i>
+        <i class="fas fa-arrow-right main__icon main__icon-right"></i>
+      </div>
+
+    </div>
+  </main>
+
   <figcaption class="figcaption">
     <div class="container">
 
@@ -183,7 +236,7 @@
         <hr class="figure__line">
       </div>
 
-      <div class="swiper-container-figcaption">
+      <div class="swiper-container swiper-container-figcaption">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <p class="figcaption__swiper-text">
@@ -250,7 +303,7 @@
   <script type="module">
     import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
   
-    new Swiper('.swiper-container', {
+    new Swiper('.swiper-container-article', {
       loop: true,
       spaceBetween: 35,
       centeredSlides: true,
@@ -264,6 +317,25 @@
         }
       }
     });
+
+    new Swiper('.swiper-container-main', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 35,
+      centeredSlides: true,
+      navigation: {
+        nextEl: '.main__icon-right',
+        prevEl: '.main__icon-left',
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 5
+        }
+      },
+    }); 
     
     new Swiper('.swiper-container-figcaption', {
       loop: true,
