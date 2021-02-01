@@ -11190,4 +11190,99 @@ h3 {
   color: var(--text-color);
 }
 
+.figure {
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .figure {
+    padding-top: 700px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+.figure__title {
+  font-weight: bold;
+  padding: 20px 0;
+}
+.figure__line {
+  margin: 0 auto;
+  height: 3px;
+  width: 80px;
+  background: var(--btn-color);
+}
+.figure__desc {
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.video__wrap {
+  position: relative;
+  max-width: 1075px;
+  margin-top: 50px;
+}
+.video__wrap:hover .video__controls {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--text-color);
+  z-index: 5;
+}
+.video__controls {
+  display: none;
+}
+.video__name {
+  position: absolute;
+  color: var(--text-color);
+  top: 25px;
+  left: 25px;
+  font-size: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .video__name {
+    font-size: 30px;
+  }
+}
+.video__play {
+  font-size: 20px;
+  color: var(--text-color);
+}
+@media screen and (min-width: 1400px) {
+  .video__play {
+    font-size: 30px;
+  }
+}
+.video__progress {
+  position: relative;
+  background: #ffffff70;
+  flex: 1 0 auto;
+  margin: 8px 1rem;
+}
+.video__progress-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ffffff;
+}
+.video__timer {
+  font-size: 20px;
+}
+@media screen and (min-width: 1400px) {
+  .video__timer {
+    font-size: 30px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
