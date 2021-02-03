@@ -152,21 +152,112 @@
         </div>
       </div>
 
-      <div class="video__wrap">
-        <video id="video">
-          <source src="video/Maldives.mp4" type="video/mp4" class="video__mp">
-        </video>
-        <p class="video__name">
-          When go to Maldives 
-        </p>
-        <a href="#" class="video__play">
-          <i class="far fa-play-circle video__play-icon"></i>
-        </a>
-        <div class="video__controls">
-          <div class="video__progress">
-            <div class="video__progress-line"></div>
+      <div class="swiper-container swiper-container-video">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="video__wrap">
+              <video id="video">
+                <source src="video/Maldives.mp4" type="video/mp4" class="video__mp">
+              </video>
+              <p class="video__name">
+                When go to Maldives 
+              </p>
+              <a href="#" class="video__play">
+                <i class="far fa-play-circle video__play-icon"></i>
+              </a>
+              <div class="video__controls">
+                <div class="video__progress">
+                  <div class="video__progress-line"></div>
+                </div>
+                <div class="video__timer">0:00</div>
+              </div>
+            </div>
           </div>
-          <div class="video__timer">0:00</div>
+          <div class="swiper-slide">
+            <div class="video__wrap">
+              <video id="video">
+                <source src="video/Maldives.mp4" type="video/mp4" class="video__mp">
+              </video>
+              <p class="video__name">
+                When go to Maldives 
+              </p>
+              <a href="#" class="video__play">
+                <i class="far fa-play-circle video__play-icon"></i>
+              </a>
+              <div class="video__controls">
+                <div class="video__progress">
+                  <div class="video__progress-line"></div>
+                </div>
+                <div class="video__timer">0:00</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="video__wrap">
+              <video id="video">
+                <source src="video/Maldives.mp4" type="video/mp4" class="video__mp">
+              </video>
+              <p class="video__name">
+                When go to Maldives 
+              </p>
+              <a href="#" class="video__play">
+                <i class="far fa-play-circle video__play-icon"></i>
+              </a>
+              <div class="video__controls">
+                <div class="video__progress">
+                  <div class="video__progress-line"></div>
+                </div>
+                <div class="video__timer">0:00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="thumb">
+          <div class="thumb__slider swiper-container swiper-container-thumb">
+            <ul class="thumb__list swiper-wrapper">
+              <li class="thumb__item swiper-slide thumb__item-active">
+                <div class="thumb__cover">
+                  <img src="video/cover/cover Maldives.png" alt="" class="thumb__cover-img">
+                </div>
+                <div class="thumb__info">
+                  <h3 class="thumb__info-title">
+                    When go to Maldives 
+                  </h3>
+                  <p class="thumb__info-minutes">
+                    1:50
+                  </p>
+                </div>
+              </li>
+              <li class="thumb__item swiper-slide">
+                <div class="thumb__cover">
+                  <img src="video/cover/cover Maldives.png" alt="" class="thumb__cover-img">
+                </div>
+                <div class="thumb__info">
+                  <h3 class="thumb__info-title">
+                    When go to Maldives 
+                  </h3>
+                  <p class="thumb__info-minutes">
+                    1:50
+                  </p>
+                </div>
+              </li>
+              <li class="thumb__item swiper-slide">
+                <div class="thumb__cover">
+                  <img src="video/cover/cover Maldives.png" alt="" class="thumb__cover-img">
+                </div>
+                <div class="thumb__info">
+                  <h3 class="thumb__info-title">
+                    When go to Maldives 
+                  </h3>
+                  <p class="thumb__info-minutes">
+                    1:50
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -314,6 +405,17 @@
       breakpoints: {
         768: {
           slidesPerView: 3
+        }
+      }
+    });
+
+    new Swiper('.swiper-container-video', {
+      loop: true,
+      spaceBetween: 35,
+      // slideActiveClass: false,
+      thumbs: {
+        swiper: {
+          el: '.thumb__slider',
         }
       }
     });

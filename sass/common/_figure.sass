@@ -102,5 +102,33 @@
     +wideScreen 
       font-size: 30px
 
-  
+.swiper-container-video
+  padding-top: 3.4rem
 
+.swiper-container-thumb
+  padding-top: 4rem
+
+.thumb
+
+  &__list
+    +grid(repeat(1, 1fr))
+
+  &__item
+    display: flex 
+    max-height: 140px
+    width: 515px
+
+    &-active
+      transform: translateY(0)
+
+  &__cover
+    width: 200px
+    height: 115px
+
+    &-img
+      width: 100%
+
+  &__info
+    max-height: 140px
+    text-align: left
+    padding: 1rem

@@ -11309,6 +11309,39 @@ h3 {
   }
 }
 
+.swiper-container-video {
+  padding-top: 3.4rem;
+}
+
+.swiper-container-thumb {
+  padding-top: 4rem;
+}
+
+.thumb__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.thumb__item {
+  display: flex;
+  max-height: 140px;
+  width: 515px;
+}
+.thumb__item-active {
+  transform: translateY(0);
+}
+.thumb__cover {
+  width: 200px;
+  height: 115px;
+}
+.thumb__cover-img {
+  width: 100%;
+}
+.thumb__info {
+  max-height: 140px;
+  text-align: left;
+  padding: 1rem;
+}
+
 .swiper-container-figcaption {
   position: relative;
   margin-top: 100px;
