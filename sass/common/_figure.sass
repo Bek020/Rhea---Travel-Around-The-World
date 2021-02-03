@@ -47,6 +47,27 @@
         color: $textColor
         z-index: 5
 
+      & .video__play
+        position: absolute
+        display: inline
+        left: 47%
+        top: 45%
+        font-size: 20px
+        color: $textColor
+        z-index: 10
+
+        +phone
+          font-size: 35px
+
+        +tablet 
+          font-size: 45px
+
+        +desktop
+          font-size: 55px
+
+  &__play
+    display: none
+
   &__controls
     display: none
 
@@ -60,18 +81,11 @@
     +wideScreen
       font-size: 30px
 
-  &__play 
-    font-size: 20px
-    color: $textColor
-
-    +wideScreen 
-      font-size: 30px
-
   &__progress
     position: relative
     background: #ffffff70
     flex: 1 0 auto
-    margin: 8px 1rem
+    margin: 8px 0
 
     &-line 
       position: absolute
@@ -82,6 +96,7 @@
       background: #ffffff
   
   &__timer 
+    margin-left: 1rem
     font-size: 20px
 
     +wideScreen 

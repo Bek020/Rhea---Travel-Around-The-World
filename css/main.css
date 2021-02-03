@@ -11111,6 +11111,10 @@ h3 {
   color: #A0A0A0;
 }
 
+.swiper-container-article {
+  padding-top: 3.4rem;
+}
+
 .swiper-slide-active {
   transform: translateY(-50px);
   transition: 0.5s;
@@ -11239,6 +11243,33 @@ h3 {
   color: var(--text-color);
   z-index: 5;
 }
+.video__wrap:hover .video__play {
+  position: absolute;
+  display: inline;
+  left: 47%;
+  top: 45%;
+  font-size: 20px;
+  color: var(--text-color);
+  z-index: 10;
+}
+@media screen and (min-width: 480px) {
+  .video__wrap:hover .video__play {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .video__wrap:hover .video__play {
+    font-size: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .video__wrap:hover .video__play {
+    font-size: 55px;
+  }
+}
+.video__play {
+  display: none;
+}
 .video__controls {
   display: none;
 }
@@ -11254,20 +11285,11 @@ h3 {
     font-size: 30px;
   }
 }
-.video__play {
-  font-size: 20px;
-  color: var(--text-color);
-}
-@media screen and (min-width: 1400px) {
-  .video__play {
-    font-size: 30px;
-  }
-}
 .video__progress {
   position: relative;
   background: #ffffff70;
   flex: 1 0 auto;
-  margin: 8px 1rem;
+  margin: 8px 0;
 }
 .video__progress-line {
   position: absolute;
@@ -11278,6 +11300,7 @@ h3 {
   background: #ffffff;
 }
 .video__timer {
+  margin-left: 1rem;
   font-size: 20px;
 }
 @media screen and (min-width: 1400px) {
@@ -11394,6 +11417,7 @@ h3 {
 
 .swiper-container-main {
   max-width: 100%;
+  padding-top: 3.4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -8,10 +8,10 @@ playButton.on('click', function (event) {
 
   if(video.paused) {
     video.play();
-    playButton.html('<i class="fas fa-pause-circle"></i>')
+    playButton.html('<i class="far fa-pause-circle"></i>')
   } else {
     video.pause();
-    playButton.html('<i class="fas fa-play-circle"></i>')
+    playButton.html('<i class="far fa-play-circle"></i>')
   }
 });
   
