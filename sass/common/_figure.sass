@@ -109,9 +109,19 @@
   padding-top: 4rem
 
 .thumb
+  margin-top: -300px
+  +phone
+    margin-top: -200px
+
+  +tablet 
+    margin-top: -100px
+
+  +laptop 
+    margin-top: 0
 
   &__list
-    +grid(repeat(1, 1fr))
+    display: block
+    padding: 0
 
   &__item
     display: flex 

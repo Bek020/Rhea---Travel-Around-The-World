@@ -217,7 +217,7 @@
         <div class="thumb">
           <div class="thumb__slider swiper-container swiper-container-thumb">
             <ul class="thumb__list swiper-wrapper">
-              <li class="thumb__item swiper-slide thumb__item-active">
+              <li class="thumb__item swiper-slide  thumb__item-active">
                 <div class="thumb__cover">
                   <img src="video/cover/cover Maldives.png" alt="" class="thumb__cover-img">
                 </div>
@@ -440,9 +440,11 @@
       loop: true,
       spaceBetween: 35,
       // slideActiveClass: false,
+      // direction: 'vertical',
       thumbs: {
         swiper: {
           el: '.thumb__slider',
+          allowTouchMove: false
         }
       }
     });

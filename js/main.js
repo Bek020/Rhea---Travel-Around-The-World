@@ -29,12 +29,12 @@ $(video).on('canplay', function () {
 $(video).on('timeupdate', function () {
   let time = video.duration - video.currentTime;
   setTime(time);
+  let progression = video.currentTime / video.duration * 100;
+  progressLine.css({
+    width:progression + "%"
+  });
 });
 
-let progression = video.currentTime / video.duration * 100;
-progressLine.css({
-  width:progression + "%"
-});
 
 $('.video__progress').on('click', function (event) {
   let position = event.pageX - $(this).offset().left;

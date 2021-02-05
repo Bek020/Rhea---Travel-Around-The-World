@@ -1,14 +1,27 @@
 .footer
+  position: relative
   background-image: url(../image/Footer/footer.png)
   background-repeat: no-repeat
   background-size: cover
   font-family: 'Nunito Sans', sans-serif
   margin-top: 50px
 
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #00000052
+    z-index: 1
+
   &__info
+    position: relative
     padding: 315px 0 85px
     text-align: center
     color: $textColor
+    z-index: 2
 
   &__title
     text-transform: uppercase
@@ -18,8 +31,10 @@
     font-size: 50px
 
   &__form
+    position: relative
     font-size: 25px
     padding-bottom: 315px
+    z-index: 2
 
     +tablet 
       +grid(repeat(2, 1fr))
@@ -37,6 +52,9 @@
     padding: 1.5rem
     background: #ffffff44
     color: $textColor
+
+    &::placeholder 
+      color: $textColor
   
   &__btn
     width: 100%
@@ -45,3 +63,6 @@
     border: none
     background: $btnColor
     color: $textColor
+
+    &:hover
+      background:  #3271ce
